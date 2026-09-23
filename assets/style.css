@@ -1,0 +1,186 @@
+/* ================= Shared project styling ================= */
+:root {
+  --bg: #0f1220;
+  --bg-card: #171b2e;
+  --accent: #7c8cff;
+  --accent-2: #38e0c0;
+  --text: #eef0fb;
+  --text-dim: #a4a9c7;
+  --border: #2a2f4a;
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: radial-gradient(circle at top left, #1c2040, var(--bg) 60%);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+header.site-header {
+  padding: 28px 24px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+header.site-header h1 {
+  margin: 0 0 6px;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  letter-spacing: 0.5px;
+}
+
+header.site-header p {
+  margin: 0;
+  color: var(--text-dim);
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+}
+
+/* Dashboard cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 26px 22px;
+  text-align: center;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.card p {
+  color: var(--text-dim);
+  font-size: 0.92rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #0b0d18;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn:hover { opacity: 0.9; }
+
+/* Program list pages */
+.list-page ol, .list-page ul {
+  padding-left: 22px;
+  line-height: 2;
+}
+
+.list-page a {
+  color: var(--accent-2);
+  text-decoration: none;
+}
+
+.list-page a:hover { text-decoration: underline; }
+
+/* Individual program page */
+.program-page section.demo {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+  margin: 22px 0;
+}
+
+.program-page .desc {
+  color: var(--text-dim);
+}
+
+nav.crumbs {
+  margin-bottom: 18px;
+  font-size: 0.9rem;
+}
+
+nav.crumbs a {
+  color: var(--accent-2);
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+nav.crumbs a:hover { text-decoration: underline; }
+
+footer.nav-footer {
+  margin-top: 30px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+footer.nav-footer a {
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.88rem;
+}
+
+footer.nav-footer a:hover { border-color: var(--accent); }
+
+table.demo-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.demo-table th, table.demo-table td {
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  text-align: left;
+}
+
+table.demo-table th {
+  background: #20244a;
+}
+
+form.demo-form label {
+  display: block;
+  margin: 12px 0 4px;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+}
+
+form.demo-form input,
+form.demo-form select,
+form.demo-form textarea {
+  width: 100%;
+  padding: 9px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #0f1329;
+  color: var(--text);
+}
+
+form.demo-form button {
+  margin-top: 16px;
+}

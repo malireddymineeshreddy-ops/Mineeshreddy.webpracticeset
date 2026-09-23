@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internal and External CSS Styling</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .internal-demo {
+    color: #38e0c0;
+    background: #12162b;
+    padding: 10px 14px;
+    border-left: 4px solid #7c8cff;
+    border-radius: 6px;
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <h1>Internal and External CSS Styling</h1>
+  <p>Demonstrates a page using both an internal <style> block and the external stylesheet.</p>
+</header>
+<main class="program-page">
+  <nav class="crumbs"><a href="../index.html">Home</a><a href="index.html">HTML Programs</a></nav>
+
+  <section class="demo">
+    <p class="internal-demo">This paragraph is styled by an <strong>internal</strong> &lt;style&gt; block defined in this page's &lt;head&gt;.</p>
+    <p>This paragraph relies only on the <strong>external</strong> stylesheet (assets/style.css) shared by the whole site.</p>
+  </section>
+
+  <footer class="nav-footer">
+    <a href="../index.html">Home</a>
+    <a href="index.html">HTML Programs</a>
+  </footer>
+</main>
+
+</body>
+</html>

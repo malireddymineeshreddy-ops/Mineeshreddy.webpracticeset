@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Webpage Using Media Queries</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .responsive-box {
+    padding: 30px;
+    border-radius: 10px;
+    background: #38e0c0;
+    color: #0b0d18;
+    font-weight: bold;
+    text-align: center;
+  }
+  @media (max-width: 700px) {
+    .responsive-box { background: #ffcb6b; }
+    .responsive-box::after { content: " (narrow layout)"; }
+  }
+  @media (max-width: 420px) {
+    .responsive-box { background: #ff6b81; }
+    .responsive-box::after { content: " (mobile layout)"; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <h1>Responsive Webpage Using Media Queries</h1>
+  <p>Resize the browser window — the box below changes color and layout at different breakpoints.</p>
+</header>
+<main class="program-page">
+  <nav class="crumbs"><a href="../index.html">Home</a><a href="index.html">HTML Programs</a></nav>
+
+  <section class="demo">
+    <div class="responsive-box">Resize the browser window to see this box respond (color + text change on small screens).</div>
+  </section>
+
+  <footer class="nav-footer">
+    <a href="../index.html">Home</a>
+    <a href="index.html">HTML Programs</a>
+  </footer>
+</main>
+
+</body>
+</html>

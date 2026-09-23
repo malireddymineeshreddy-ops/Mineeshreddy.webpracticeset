@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Selectors, Colors, Fonts, Margins, Padding, Borders</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  p { font-family: Georgia, serif; }
+  #unique { color: #ffcb6b; font-weight: bold; }
+  .styled {
+    color: #0b0d18;
+    background: #38e0c0;
+    margin: 14px 0;
+    padding: 10px 16px;
+    border: 2px dashed #7c8cff;
+    border-radius: 8px;
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <h1>CSS Selectors, Colors, Fonts, Margins, Padding, Borders</h1>
+  <p>Demonstrates common CSS selectors and box-model properties via an internal stylesheet.</p>
+</header>
+<main class="program-page">
+  <nav class="crumbs"><a href="../index.html">Home</a><a href="index.html">HTML Programs</a></nav>
+
+  <section class="demo">
+    <p id="unique">This paragraph is styled using an <code>#id</code> selector.</p>
+    <p class="styled">This paragraph is styled using a <code>.class</code> selector.</p>
+    <p>This plain paragraph is styled using the <code>p</code> element selector.</p>
+  </section>
+
+  <footer class="nav-footer">
+    <a href="../index.html">Home</a>
+    <a href="index.html">HTML Programs</a>
+  </footer>
+</main>
+
+</body>
+</html>
